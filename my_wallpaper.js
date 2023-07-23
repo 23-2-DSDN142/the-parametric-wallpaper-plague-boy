@@ -15,15 +15,15 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(217, 149, 24); //Mustard
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   let noseX = (100)
   let noseY = (125)
 
-fill(240, 129, 65); //Orange
-stroke(168, 74, 20); //Dusty Orange
+fill(191, 91, 4); //Orange
+stroke(115, 32, 2); //Dusty Orange
 beginShape(); //Head
   vertex(noseX,noseY-50);
 
@@ -52,9 +52,10 @@ beginShape(); //Head
   vertex(noseX,noseY-50) //Top
 endShape(CLOSE)
 
-fill(255, 255, 255); //WHITE
-noStroke(168, 74, 20)
+fill(221, 203, 186); //OFF-WHITE
+stroke(115, 32, 2)
 beginShape(); //Little White marking
+  vertex(noseX,noseY-10);
  vertex(noseX,noseY-10); //Center Nose
  vertex(noseX-20,noseY-20) 
   vertex(noseX-35,noseY-15)
@@ -74,12 +75,12 @@ beginShape(); //Little White marking
 
 endShape(CLOSE);
 
-fill(168, 74, 20);
+fill(115, 32, 2);
 ellipse(noseX,noseY-12,15,5); //Nose
 
-fill(168, 74, 20); //Left Eye
+fill(115, 32, 2); //Left Eye
 ellipse(noseX-25,noseY-35,5,15);
 
-fill(168, 74, 20); //Right Eye
+fill(115, 32, 2); //Right Eye
 ellipse(noseX+25,noseY-35,5,15);
 }
