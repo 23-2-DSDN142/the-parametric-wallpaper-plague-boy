@@ -2,6 +2,15 @@
 let rect_width  = 200;
 let rect_height = 200;
 
+//Fox Motif
+let eyeWid = 15; //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (100);//basis for location X, 100
+let noseY = (125);//basis for location Y, 125
+let foxsize = 1 //size
+
+//Mushroom
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -15,15 +24,40 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(217, 149, 24); //Mustard
+  let mustardA = color(239, 169, 40);
+  background(mustardA); 
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  let noseX = (100)
-  let noseY = (125)
+  // Colour Pallette
+  let mustardA = color(239, 169, 40);
+  let mustardB = color(217, 149, 24);
+  let mustardC = color(198, 133, 13);
 
-fill(191, 91, 4); //Orange
-stroke(115, 32, 2); //Dusty Orange
+  let orangeA = color(212, 105, 11)
+  let orangeB = color(191, 91, 4)
+  let orangeC = color(178, 83, 0)
+
+  let crimsonA = color(139, 42, 7)
+  let crimsonB = color(115, 32, 2)
+  let crimsonC = color(98, 26, 0)
+
+  let brownA = color(87, 27, 5)
+  let brownB = color(64, 18, 1)
+  let brownC = color(50, 14, 0)
+
+  let whiteA = color(241, 227, 213)
+  let whiteB = color(221, 203, 186)
+  let whiteC = color(189, 167, 146)
+
+  let redA = color(209, 31, 15)
+  let redB = color(191, 19, 4)
+  let redC = color(168, 14, 0)
+
+//Fox Motif
+scale(foxsize); 
+fill(orangeA);
+stroke(crimsonA);
 beginShape(); //Head
   vertex(noseX,noseY-50);
 
@@ -52,8 +86,9 @@ beginShape(); //Head
   vertex(noseX,noseY-50) //Top
 endShape(CLOSE)
 
-fill(221, 203, 186); //OFF-WHITE
-stroke(115, 32, 2)
+
+fill(whiteB); 
+stroke(crimsonA)
 beginShape(); //Little White marking
   vertex(noseX,noseY-10);
  vertex(noseX,noseY-10); //Center Nose
@@ -75,12 +110,16 @@ beginShape(); //Little White marking
 
 endShape(CLOSE);
 
-fill(115, 32, 2);
-ellipse(noseX,noseY-12,15,5); //Nose
+fill(brownA);
+stroke(brownA)
+ellipse(noseX,noseY-12,noseW, noseH); //Nose
 
-fill(115, 32, 2); //Left Eye
-ellipse(noseX-25,noseY-35,5,15);
+fill(brownA); //Left Eye
+ellipse(noseX-25,noseY-35,5,eyeWid);
 
-fill(115, 32, 2); //Right Eye
-ellipse(noseX+25,noseY-35,5,15);
+fill(brownA); //Right Eye
+ellipse(noseX+25,noseY-35,5,eyeWid);
+
+
+
 }
