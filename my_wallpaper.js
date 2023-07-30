@@ -127,12 +127,14 @@ pop()
 
 push()
 scale(foxsize)
+stroke(brownA)
 fill(brownA); //Left Eye
 ellipse(noseX-25,noseY-35,5,eyeWid);
 pop()
 
 push()
 scale(foxsize)
+stroke(brownA)
 fill(brownA); //Right Eye
 ellipse(noseX+25,noseY-35,5,eyeWid);
 pop()
@@ -164,19 +166,19 @@ scale(mushsize)
 fill(redA);
 stroke(crimsonB);
 beginShape(); //mush hat
-vertex(mushX,mushY-75); //center middle top
+  vertex(mushX,mushY-75); //center middle top
 
-vertex(mushX+50,mushY-75);
-vertex(mushX+100,mushY-25);
-vertex(mushX+75,mushY);
+  vertex(mushX+50,mushY-75);
+  vertex(mushX+100,mushY-25);
+  vertex(mushX+75,mushY);
 
-vertex(mushX,mushY);
+  vertex(mushX,mushY);
 
-vertex(mushX-75,mushY);
-vertex(mushX-100,mushY-25);
-vertex(mushX-50,mushY-75);
+  vertex(mushX-75,mushY);
+  vertex(mushX-100,mushY-25);
+  vertex(mushX-50,mushY-75);
 
-vertex(mushX,mushY-75);
+  vertex(mushX,mushY-75);
 endShape(CLOSE);
 pop()
 
@@ -185,15 +187,66 @@ scale(mushsize)
 fill(whiteA)
 stroke(crimsonB)
 beginShape()
-vertex(mushX+10,mushY-65)
-vertex (mushX+45,mushY-65)
-vertex(mushX+65,mushY-45)
-vertex(mush+75,mushY-40)
-vertex(mushX,mushY-45)
-vertex(mushX-15,mushY-55)
-vertex(mushX,mushY-65)
-vertex(mushX+10,mushY-65)
+  vertex(mushX+10,mushY-70)
+  vertex (mushX+47,mushY-70)
+  vertex(mushX+65,mushY-52)
+  vertex(mushX+55,mushY-42)
+  vertex(mushX+20,mushY-40)
+  vertex(mushX,mushY-45)
+  vertex(mushX-15,mushY-55)
+  vertex(mushX,mushY-70)
+  vertex(mushX+10,mushY-70)
 
-endShape()
+endShape(CLOSE)
 pop()
+
+push()//Spot dos
+scale(mushsize)
+fill(whiteA)
+stroke(crimsonB)
+beginShape()
+  vertex(mushX-26,mushY-70)
+  vertex(mushX-5,mushY-70)
+  vertex(mushX-20,mushY-55)
+  vertex(mushX-28.5,mushY-60)
+endShape(CLOSE)
+pop()
+
+push()//Spot tres
+scale(mushsize)
+fill(whiteA)
+stroke(crimsonB)
+beginShape()
+  vertex(mushX+55,mushY-38)
+  vertex(mushX+35,mushY-37)
+  vertex(mushX+25,mushY-30)
+  vertex(mushX+40,mushY-20)
+  vertex(mushX+50,mushY-20)
+  vertex(mushX+60,mushY-30)
+endShape(CLOSE)
+pop()
+
+push()//Spot dos
+scale(mushsize)
+fill(whiteA)
+stroke(crimsonB)
+beginShape()
+  vertex(mushX+68,mushY-49)
+  vertex(mushX+58,mushY-39)
+  vertex(mushX+63,mushY-32)
+  vertex(mushX+67,mushY-30)
+  vertex(mushX+78,mushY-40)
+endShape(CLOSE)
+pop()
+
+push()//Spot dos
+scale(mushsize)
+fill(whiteA)
+stroke(crimsonB)
+beginShape()
+  vertex(mushX-5,mushY-42)
+  vertex(mushX-10,mushY-20)
+endShape(CLOSE)
+pop()
+
 }
