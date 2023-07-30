@@ -8,10 +8,10 @@ let noseW = (15); //15 deff
 let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
-let foxsize = (0.1); //size
+let foxsize = (0.5); //size
 
 //Mushie0
-let mushsize = (1);
+let mushsize = (0.3);
 let mushX = (100)
 let mushY = (100)
 
@@ -207,7 +207,7 @@ stroke(crimsonB)
 beginShape()
   vertex(mushX-26,mushY-70)
   vertex(mushX-5,mushY-70)
-  vertex(mushX-20,mushY-55)
+  vertex(mushX-18,mushY-57)
   vertex(mushX-28.5,mushY-60)
 endShape(CLOSE)
 pop()
@@ -219,9 +219,9 @@ stroke(crimsonB)
 beginShape()
   vertex(mushX+55,mushY-38)
   vertex(mushX+35,mushY-37)
-  vertex(mushX+25,mushY-30)
+  vertex(mushX+30,mushY-30)
   vertex(mushX+40,mushY-20)
-  vertex(mushX+50,mushY-20)
+  vertex(mushX+55,mushY-20)
   vertex(mushX+60,mushY-30)
 endShape(CLOSE)
 pop()
@@ -239,14 +239,6 @@ beginShape()
 endShape(CLOSE)
 pop()
 
-push()//Spot dos
-scale(mushsize)
-fill(whiteA)
-stroke(crimsonB)
-beginShape()
-  vertex(mushX-5,mushY-42)
-  vertex(mushX-10,mushY-20)
-endShape(CLOSE)
-pop()
+
 
 }
