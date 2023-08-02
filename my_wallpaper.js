@@ -2,22 +2,25 @@
 let rect_width  = 200;
 let rect_height = 200;
 
+//Geometric background
+let geosize = (1); //size of geometric background
+
 //Fox Motif
-let eyeWid = 15; //15 deff
+let eyeWid = (15); //15 deff
 let noseW = (15); //15 deff
 let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
-let foxsize = (0.5); //size
+let foxsize = (.01); //size of fox
 
-//Mushie0
-let mushsize = (0.3);
-let mushX = (100)
-let mushY = (100)
-
+//Mushie
+let mushsize = (.01); //size of mushie
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
+ // pWallpaper.output_mode(GLIDE_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(); //set this to false when you're ready to print
 
@@ -57,6 +60,29 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   let redA = color(209, 31, 15)
   let redB = color(191, 19, 4)
   let redC = color(168, 14, 0)
+
+//Geo Background
+push()
+scale(geosize)
+fill(mustardC)
+stroke(mustardC)
+  triangle(5,5,5,35,35,5)
+pop()
+push()
+scale(geosize)
+noFill()
+stroke(mustardC)
+  triangle(10,10,10,45,45,10)
+pop()
+push()
+
+pop()
+scale(geosize)
+stroke(mustardA)
+  line(2,5,40,40)
+  line(2,10,40,45)
+
+
 
 //Fox Motif
 push()
