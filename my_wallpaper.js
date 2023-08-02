@@ -4,6 +4,7 @@ let rect_height = 200;
 
 //Geometric background
 let geosize = (1); //size of geometric background
+let geo = false //turn on and off
 
 //Fox Motif
 let eyeWid = (15); //15 deff
@@ -11,12 +12,18 @@ let noseW = (15); //15 deff
 let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
-let foxsize = (.01); //size of fox
+let foxsize = (1); //size of fox 1
+let foxy = true //turn off and on 
 
 //Mushie
-let mushsize = (.01); //size of mushie
+let mushsize = (.34); //size of mushie .3
 let mushX = (125) //x co-ord for mush orgin 125
 let mushY = (100) //x co-ord for mush orgin 100
+let mush = true //turn on and off
+
+//Leaf
+let leafsize = (1)
+let leaf = false
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -61,6 +68,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   let redB = color(191, 19, 4)
   let redC = color(168, 14, 0)
 
+if (geo){
 //Geo Background
 push()
 scale(geosize)
@@ -75,16 +83,19 @@ stroke(mustardC)
   triangle(10,10,10,45,45,10)
 pop()
 push()
-
-pop()
 scale(geosize)
 stroke(mustardA)
   line(2,5,40,40)
   line(2,10,40,45)
+pop()
 
+push()
+fill(mustardC)
+stroke(mustardC)
 
+}
 
-//Fox Motif
+if (foxy){//Fox Motif
 push()
 scale(foxsize);
 fill(orangeA);
@@ -163,8 +174,9 @@ scale(foxsize)
 stroke(brownA)
 fill(brownA); //Right Eye
 ellipse(noseX+25,noseY-35,5,eyeWid);
-pop()
+pop()}
 
+if (mush){
 //Mushie
 //mush leg
 push();
@@ -265,6 +277,31 @@ beginShape()
 endShape(CLOSE)
 pop()
 
+}
 
+if (leaf){
+//Leaf
+push()
+scale(leafsize) 
+fill(brownA)
+stroke(brownB)
+beginShape()
+  vertex(60,75)
+  vertex(50,65)
+  vertex(60,60)
+  vertex(65,35)
+  vertex(75,50)
+  vertex(100,25) //top point
+  vertex(100,50)
+  vertex(125,50)
+  vertex(100,75)
+  vertex(110,85)
+  vertex(100,90)
+  vertex(75,85)
+  vertex
+  vertex()
+endShape(CLOSE)
+
+}
 
 }
