@@ -13,17 +13,18 @@ let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1
-let foxy = true //turn off and on 
+let foxy = false //turn off and on 
 
 //Mushie
 let mushsize = (.34); //size of mushie .3
 let mushX = (125) //x co-ord for mush orgin 125
 let mushY = (100) //x co-ord for mush orgin 100
-let mush = true //turn on and off
+let mush = false //turn on and off
 
 //Leaf
 let leafsize = (1)
-let leaf = false
+let leaf = true
+let leafX =
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);
@@ -283,7 +284,7 @@ if (leaf){
 //Leaf
 push()
 scale(leafsize) 
-fill(brownA)
+fill(crimsonA)
 stroke(brownB)
 beginShape()
   vertex(60,75)
@@ -292,15 +293,15 @@ beginShape()
   vertex(65,35)
   vertex(75,50)
   vertex(100,25) //top point
-  vertex(100,50)
-  vertex(125,50)
+  vertex(100,60)
+  vertex(115,60)
   vertex(100,75)
   vertex(110,85)
   vertex(100,90)
-  vertex(75,85)
-  vertex
-  vertex()
+  vertex(70,85)
 endShape(CLOSE)
+line(61,100,84,60) //stem
+pop()
 
 }
 
