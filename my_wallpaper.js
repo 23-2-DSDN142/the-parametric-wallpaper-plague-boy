@@ -13,22 +13,22 @@ let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1
-let foxy = true //turn off and on 
+let foxysin = true //true, fox is singular, false theres three foxes
 
 //left fox 
-let eyeWidB = (15); //
-let noseWB = (15); //
-let noseHB = (5); //
-let noseXB = (100);//basis for location X, 100
-let noseYB = (125);//basis for location Y, 125
+let eyeWidB = (15); // 15*
+let noseWB = (15); //15*
+let noseHB = (5); //5*
+let noseXB = (400);//basis for location X, 100
+let noseYB = (225);//basis for location Y, 125
 let foxsizeB = (.5); //size of fox .5
 
 //right fox
-let eyeWidC = (15); //15 deff
-let noseWC = (15); //15 deff
-let noseHC = (5); //5 deff
-let noseXC = (100);//basis for location X, 100
-let noseYC = (125);//basis for location Y, 125
+let eyeWidC = (15); //15*
+let noseWC = (15); //15*
+let noseHC = (5); //5*
+let noseXC = (0);//basis for location X, 100
+let noseYC = (225);//basis for location Y, 125
 let foxsizeC = (.5); //size of fox .5
 
 //Mushie A (Coloured In True)
@@ -61,7 +61,7 @@ function setup_wallpaper(pWallpaper) {
  //pWallpaper.output_mode(DEVELOP_GLYPH);
  pWallpaper.output_mode(GLIDE_WALLPAPER);
  //pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(A3);
   pWallpaper.show_guide(); //set this to false when you're ready to print
 
   //Grid settings
@@ -101,7 +101,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   let redB = color(191, 19, 4)
   let redC = color(168, 14, 0)
 
-if (foxy){//Fox Motif, middle main
+if (foxysin){//Fox Motif, middle main
 push()
 scale(foxsize);
 fill(orangeA);
