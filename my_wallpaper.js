@@ -13,22 +13,24 @@ let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1
-let foxy = false //turn off and on 
+let foxy = true //turn off and on 
 
 //Mushie
-let mushsize = (.34); //size of mushie .3
+let mushsize = (.34); //size of mushie .34
 let mushX = (125) //x co-ord for mush orgin 125
 let mushY = (100) //x co-ord for mush orgin 100
-let mush = false //turn on and off
+let mush = true //turn on and off
 
 //Leaf
-let leafsize = (1)
+let leafsize = (.75) //size of leaf .75
 let leaf = true
-let leafX =
+let leafX = (240)
+let leafY = (185)
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
  // pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(); //set this to false when you're ready to print
 
@@ -187,15 +189,15 @@ stroke(whiteC);
 beginShape();
   vertex(mushX,mushY);
 
-  vertex(mushX+15,mushY);
-  vertex(mushX+25,mushY+25);
-  vertex(mushX+10,mushY+100);
+  vertex(mushX+25,mushY);
+  vertex(mushX+40,mushY+25);
+  vertex(mushX+20,mushY+85);
 
-  vertex(mushX,mushY+100);
+  vertex(mushX,mushY+85);
 
-  vertex(mushX-10,mushY+100);
-  vertex(mushX-25,mushY+25);
-  vertex(mushX-15,mushY);
+  vertex(mushX-20,mushY+85);
+  vertex(mushX-40,mushY+25);
+  vertex(mushX-25,mushY);
 
 endShape(CLOSE);
 pop()
@@ -287,22 +289,21 @@ scale(leafsize)
 fill(crimsonA)
 stroke(brownB)
 beginShape()
-  vertex(60,75)
-  vertex(50,65)
-  vertex(60,60)
-  vertex(65,35)
-  vertex(75,50)
-  vertex(100,25) //top point
-  vertex(100,60)
-  vertex(115,60)
-  vertex(100,75)
-  vertex(110,85)
-  vertex(100,90)
-  vertex(70,85)
+  vertex(leafX-40,leafY+50)
+  vertex(leafX-50,leafY+40)
+  vertex(leafX-40,leafY+35)
+  vertex(leafX-35,leafY+10)
+  vertex(leafX-25,leafY+25)
+  vertex(leafX,leafY) //top point
+  vertex(leafX,leafY+35)
+  vertex(leafX+15,leafY+35)
+  vertex(leafX,leafY+50)
+  vertex(leafX+10,leafY+60)
+  vertex(leafX,leafY+65)
+  vertex(leafX-30,leafY+60)
 endShape(CLOSE)
-line(61,100,84,60) //stem
+line(leafX-39,leafY+75,leafX-16,leafY+35) //stem
 pop()
-
 }
 
 }
