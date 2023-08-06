@@ -35,7 +35,7 @@ let foxsizeC = (.5); //size of fox 1
 let mushsize = (.4); //size of mushie .34
 let mushX = (125) //x co-ord for mush orgin 125
 let mushY = (100) //x co-ord for mush orgin 100
-let mush = false //turn on and off
+let mush = true //turn on and off
 let mushheav = 2
 
 //Mushie B
