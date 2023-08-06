@@ -10,57 +10,57 @@ let geo = false //turn on and off
 let eyeWid = (15); //15 deff
 let noseW = (15); //15 deff
 let noseH = (5); //5 deff
-let noseX = (200);//basis for location X, 100
-let noseY = (225);//basis for location Y, 125
-let foxsize = (.5); //size of fox 1
-let foxy = false //turn off and on 
+let noseX = (100);//basis for location X, 100
+let noseY = (125);//basis for location Y, 125
+let foxsize = (1); //size of fox 1
+let foxy = true //turn off and on 
 
 //left fox 
 let eyeWidB = (15); //
 let noseWB = (15); //
 let noseHB = (5); //
-let noseXB = (0);//basis for location X, 100
-let noseYB = (225);//basis for location Y, 125
-let foxsizeB = (.5); //size of fox 1
+let noseXB = (100);//basis for location X, 100
+let noseYB = (125);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox .5
 
 //right fox
 let eyeWidC = (15); //15 deff
 let noseWC = (15); //15 deff
 let noseHC = (5); //5 deff
-let noseXC = (400);//basis for location X, 100
-let noseYC = (225);//basis for location Y, 125
-let foxsizeC = (.5); //size of fox 1
+let noseXC = (100);//basis for location X, 100
+let noseYC = (125);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox .5
 
-//Mushie A
-let mushsize = (.4); //size of mushie .34
+//Mushie A (Coloured In True)
+let mushsize = (.34); //size of mushie .34
 let mushX = (125) //x co-ord for mush orgin 125
 let mushY = (100) //x co-ord for mush orgin 100
 let mush = true //turn on and off
 let mushheav = 2
 
 //Mushie B
-let mushBsize = (.4); //size of mushie .34
+let mushBsize = (.34); //size of mushie .34
 let mushBX = (125) //x co-ord for mush orgin 125
-let mushBY = (400) //x co-ord for mush orgin 100
+let mushBY = (485) //x co-ord for mush orgin 100
 let mushB = false //turn on and off
 let mushBheav = 2
 
 //Leaf A (Coloured in)
-let leafAsize = (.9) //size of leaf .75
-let leafA = true
-let leafAX = (175)
-let leafAY = (140)
+let leafAsize = (.75) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (245) //245 at .75
+let leafAY = (180) //180 at .75
 
 //Leaf B (Line work only)
-let leafBsize = (.9)
-let leafB = true
-let leafBX = (135)
-let leafBY = (7)
+let leafBsize = (.75)
+let leafB = false //TRUE LINE
+let leafBX = (210) //210 for default at .75
+let leafBY = (7) //always 7 for height
 
 function setup_wallpaper(pWallpaper) {
- pWallpaper.output_mode(DEVELOP_GLYPH);
-//// pWallpaper.output_mode(GLIDE_WALLPAPER);
- pWallpaper.output_mode(GRID_WALLPAPER);
+ //pWallpaper.output_mode(DEVELOP_GLYPH);
+ pWallpaper.output_mode(GLIDE_WALLPAPER);
+ //pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(); //set this to false when you're ready to print
 
@@ -101,34 +101,7 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   let redB = color(191, 19, 4)
   let redC = color(168, 14, 0)
 
-if (geo){
-//Geo Background
-push()
-scale(geosize)
-fill(mustardC)
-stroke(mustardC)
-  triangle(5,5,5,35,35,5)
-pop()
-push()
-scale(geosize)
-noFill()
-stroke(mustardC)
-  triangle(10,10,10,45,45,10)
-pop()
-push()
-scale(geosize)
-stroke(mustardA)
-  line(2,5,40,40)
-  line(2,10,40,45)
-pop()
-
-push()
-fill(mustardC)
-stroke(mustardC)
-
-}
-
-if (foxy){//Fox Motif
+if (foxy){//Fox Motif, middle main
 push()
 scale(foxsize);
 fill(orangeA);
@@ -188,33 +161,33 @@ beginShape(); //Little White marking
 endShape(CLOSE);
 pop();
 
-push()
-scale(foxsize)
-fill(brownA);
-stroke(brownA)
-ellipse(noseX,noseY-12,noseW, noseH); //Nose
+push() //Foxes Nose
+  scale(foxsize)
+  fill(brownA);
+  stroke(brownA)
+    ellipse(noseX,noseY-12,noseW, noseH); 
 pop()
 
-push()
-scale(foxsize)
-stroke(brownA)
-fill(brownA); //Left Eye
-ellipse(noseX-25,noseY-35,5,eyeWid);
+push() //Foxes Left Eye
+  scale(foxsize)
+  stroke(brownA)
+  fill(brownA); //Left Eye
+    ellipse(noseX-25,noseY-35,5,eyeWid);
 pop()
 
-push()
-scale(foxsize)
-stroke(brownA)
-fill(brownA); //Right Eye
-ellipse(noseX+25,noseY-35,5,eyeWid);
+push() //Foxes Right Eye
+  scale(foxsize)
+  stroke(brownA)
+  fill(brownA); 
+    ellipse(noseX+25,noseY-35,5,eyeWid);
 pop()}
 
-else {
+else { //Triple Foxes Alternative
   push()
   scale(foxsizeB);
   fill(orangeA);
   stroke(crimsonA);
-  beginShape(); //Head
+  beginShape(); //Left Foxes Head
     vertex(noseXB,noseYB-50);
   
     vertex(noseXB-15,noseYB-50); //Left Side
@@ -246,7 +219,7 @@ else {
 scale(foxsizeB)
 fill(whiteB); 
 stroke(crimsonA)
-beginShape(); //Little White marking
+beginShape(); //Left Foxes Little White marking
   vertex(noseXB,noseYB-10);
   vertex(noseXB,noseYB-10); //Center Nose
   vertex(noseXB-20,noseYB-20) 
@@ -268,25 +241,25 @@ beginShape(); //Little White marking
 endShape(CLOSE);
 pop();
 
-  push()
-scale(foxsizeB)
-fill(brownA);
-stroke(brownA)
-ellipse(noseXB,noseYB-12,noseWB, noseHB); //Nose
+push() //Left Foxes Nose
+  scale(foxsizeB)
+  fill(brownA);
+  stroke(brownA)
+    ellipse(noseXB,noseYB-12,noseWB, noseHB);
 pop()
 
-push()
-scale(foxsizeB)
-stroke(brownA)
-fill(brownA); //Left Eye
-ellipse(noseXB-25,noseYB-35,5,eyeWidB);
+push() //Left Foxes Left Eye
+  scale(foxsizeB)
+  stroke(brownA)
+  fill(brownA); //Left Eye
+    ellipse(noseXB-25,noseYB-35,5,eyeWidB);
 pop()
 
-push()
-scale(foxsizeB)
-stroke(brownA)
-fill(brownA); //Right Eye
-ellipse(noseXB+25,noseYB-35,5,eyeWidB);
+push() //Left Foxes Right Eye
+  scale(foxsizeB)
+  stroke(brownA)
+  fill(brownA);
+    ellipse(noseXB+25,noseYB-35,5,eyeWidB);
 pop()
 
 push()
@@ -451,8 +424,8 @@ pop();
 }
 
 if (mush){
-//Mushie
-//mush leg
+//Mushroom, Top Left
+//mush Stump
 push();
 scale(mushsize);
 fill(whiteB);
@@ -474,12 +447,12 @@ beginShape();
 endShape(CLOSE);
 pop()
 
-push()
+push() //Mushroom Hat
 scale(mushsize)
 fill(redA);
 stroke(crimsonC);
 strokeWeight(mushheav)
-beginShape(); //mush hat
+beginShape();
   vertex(mushX,mushY-75); //center middle top
 
   vertex(mushX+50,mushY-75);
@@ -543,7 +516,7 @@ beginShape()
 endShape(CLOSE)
 pop()
 
-push()//Spot dos
+push()//Spot quatro
 scale(mushsize)
 fill(whiteA)
 stroke(crimsonC)
@@ -558,8 +531,8 @@ endShape(CLOSE)
 pop()
 }
 else {
- //Mushie
-//mush leg
+ //Mushroom, Line Only
+//mushroom Stump, Line Only
 push();
 scale(mushsize);
 noFill(whiteB);
@@ -581,12 +554,12 @@ beginShape();
 endShape(CLOSE);
 pop()
 
-push()
+push() //Mushroom Hat Line Only
 scale(mushsize)
 noFill(redA);
 stroke(crimsonC);
 strokeWeight(mushheav)
-beginShape(); //mush hat
+beginShape(); 
   vertex(mushX,mushY-75); //center middle top
 
   vertex(mushX+50,mushY-75);
@@ -650,7 +623,7 @@ beginShape()
 endShape(CLOSE)
 pop()
 
-push()//Spot dos
+push()//Spot quatro
 scale(mushsize)
 noFill(whiteA)
 stroke(crimsonC)
@@ -666,8 +639,8 @@ pop()
 }
 
 if (mushB){
-  //Mushie
-  //mush leg
+  //Mushroom B, Line only on True
+  //Mushroom B stump, line only
   push();
   scale(mushBsize);
   noFill(whiteB);
@@ -689,12 +662,12 @@ if (mushB){
   endShape(CLOSE);
   pop()
   
-  push()
+  push() //Mushroom B Hat, line only
   scale(mushBsize)
   noFill(redA);
   stroke(crimsonC);
   strokeWeight(mushBheav)
-  beginShape(); //mush hat
+  beginShape(); 
     vertex(mushBX,mushBY-75); //center middle top
   
     vertex(mushBX+50,mushBY-75);
@@ -773,8 +746,8 @@ if (mushB){
   pop()
   }
   else {
-   //Mushie
-  //mush leg
+   //Mushroom B, False, Coloured in
+  //Mushroom B, Stump, Line Only
   push();
   scale(mushBsize);
   fill(whiteB);
@@ -796,12 +769,12 @@ if (mushB){
   endShape(CLOSE);
   pop()
   
-  push()
+  push() //Mushroom B, Hat, Line only
   scale(mushBsize)
   fill(redA);
   stroke(crimsonB);
   strokeWeight(mushBheav)
-  beginShape(); //mush hat
+  beginShape();
     vertex(mushBX,mushBY-75); //center middle top
   
     vertex(mushBX+50,mushBY-75);
@@ -865,7 +838,7 @@ if (mushB){
   endShape(CLOSE)
   pop()
   
-  push()//Spot dos
+  push()//Spot quatro
   scale(mushBsize)
   fill(whiteA)
   stroke(crimsonB)
@@ -881,7 +854,7 @@ if (mushB){
   }
 
 if (leafA){
-//Leaf coloured
+//Leaf A, Top right, coloured
 push()
 scale(leafAsize) 
 fill(crimsonA)
@@ -903,7 +876,7 @@ endShape(CLOSE)
 line(leafAX-39,leafAY+75,leafAX-16,leafAY+35) //stem
 pop()
 }
-else{push()
+else{push() //Leaf A, top right, line only
   scale(leafAsize) 
   noFill()
   stroke(brownB)
@@ -925,7 +898,7 @@ else{push()
   pop()}
 
 //LEAF LINE, DESIGNED BY ME, REFLECTION CALCULATION DONE BY CHAT GPT BECAUSE I AM BAD AT MATH
-if (leafB){ 
+if (leafB){ //Leaf B, bottom right, line only
   push();
   scale(-leafBsize, leafBsize); // Horizontal reflection by negating X scale
   noFill();
@@ -948,7 +921,7 @@ if (leafB){
   pop();
 }
 else {
-  push();
+  push(); //Left B, bottom right, coloured in
   scale(-leafBsize, leafBsize); // Horizontal reflection by negating X scale
   fill(crimsonA);
   stroke(brownB);

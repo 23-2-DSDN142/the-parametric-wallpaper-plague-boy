@@ -33,13 +33,486 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//p1
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (100);//basis for location X, 100
+let noseY = (125);//basis for location Y, 125
+let foxsize = (1); //size of fox 1
+let foxy = true //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (100);//basis for location X, 100
+let noseYB = (125);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox .5
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (100);//basis for location X, 100
+let noseYC = (125);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox .5
+
+//Mushie A (Coloured In True)
+let mushsize = (.34); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = false //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.34); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (485) //x co-ord for mush orgin 100
+let mushB = false //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.75) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (245) //245 at .75
+let leafAY = (180) //180 at .75
+
+//Leaf B (Line work only)
+let leafBsize = (.75)
+let leafB = true //TRUE LINE
+let leafBX = (210) //210 for default at .75
+let leafBY = (7) //always 7 for height
+
+//p2
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (100);//basis for location X, 100
+let noseY = (125);//basis for location Y, 125
+let foxsize = (1); //size of fox 1
+let foxy = true //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (100);//basis for location X, 100
+let noseYB = (125);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox .5
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (100);//basis for location X, 100
+let noseYC = (125);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox .5
+
+//Mushie A (Coloured In True)
+let mushsize = (.34); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = true //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.34); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (485) //x co-ord for mush orgin 100
+let mushB = false //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.75) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (245) //245 at .75
+let leafAY = (180) //180 at .75
+
+//Leaf B (Line work only)
+let leafBsize = (.75)
+let leafB = false //TRUE LINE
+let leafBX = (210) //210 for default at .75
+let leafBY = (7) //always 7 for height
+
+//p3
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (100);//basis for location X, 100
+let noseY = (125);//basis for location Y, 125
+let foxsize = (1); //size of fox 1
+let foxy = true //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (100);//basis for location X, 100
+let noseYB = (125);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox .5
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (100);//basis for location X, 100
+let noseYC = (125);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox .5
+
+//Mushie A (Coloured In True)
+let mushsize = (.34); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = false //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.34); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (485) //x co-ord for mush orgin 100
+let mushB = false //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.75) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (245) //245 at .75
+let leafAY = (180) //180 at .75
+
+//Leaf B (Line work only)
+let leafBsize = (.75)
+let leafB = true //TRUE LINE
+let leafBX = (210) //210 for default at .75
+let leafBY = (7) //always 7 for height
+
+//p4
+
+
+
+//P5
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (200);//basis for location X, 100
+let noseY = (225);//basis for location Y, 125
+let foxsize = (.5); //size of fox 1
+let foxy = false //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (0);//basis for location X, 100
+let noseYB = (225);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox 1
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (400);//basis for location X, 100
+let noseYC = (225);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox 1
+
+//Mushie A (Coloured In True)
+let mushsize = (.4); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = false //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.4); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (400) //x co-ord for mush orgin 100
+let mushB = false //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.9) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (175)
+let leafAY = (140)
+
+//Leaf B (Line work only)
+let leafBsize = (.9)
+let leafB = true //TRUE LINE
+let leafBX = (135)
+let leafBY = (7)
+
+//p6
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (200);//basis for location X, 100
+let noseY = (225);//basis for location Y, 125
+let foxsize = (.5); //size of fox 1
+let foxy = false //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (0);//basis for location X, 100
+let noseYB = (225);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox 1
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (400);//basis for location X, 100
+let noseYC = (225);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox 1
+
+//Mushie A (Coloured In True)
+let mushsize = (.4); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = true //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.4); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (400) //x co-ord for mush orgin 100
+let mushB = false //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.9) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (175)
+let leafAY = (140)
+
+//Leaf B (Line work only)
+let leafBsize = (.9)
+let leafB = true //TRUE LINE
+let leafBX = (135)
+let leafBY = (7)
+
+//P7
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (200);//basis for location X, 100
+let noseY = (225);//basis for location Y, 125
+let foxsize = (.5); //size of fox 1
+let foxy = false //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (0);//basis for location X, 100
+let noseYB = (225);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox 1
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (400);//basis for location X, 100
+let noseYC = (225);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox 1
+
+//Mushie A (Coloured In True)
+let mushsize = (.4); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = true //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.4); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (400) //x co-ord for mush orgin 100
+let mushB = true //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.9) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (175)
+let leafAY = (140)
+
+//Leaf B (Line work only)
+let leafBsize = (.9)
+let leafB = true //TRUE LINE
+let leafBX = (135)
+let leafBY = (7)
+
+//P8
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (200);//basis for location X, 100
+let noseY = (225);//basis for location Y, 125
+let foxsize = (.5); //size of fox 1
+let foxy = false //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (0);//basis for location X, 100
+let noseYB = (225);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox 1
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (400);//basis for location X, 100
+let noseYC = (225);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox 1
+
+//Mushie A
+let mushsize = (.4); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = false //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.4); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (400) //x co-ord for mush orgin 100
+let mushB = true //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.9) //size of leaf .75
+let leafA = false
+let leafAX = (175)
+let leafAY = (140)
+
+//Leaf B (Line work only)
+let leafBsize = (.9)
+let leafB = true
+let leafBX = (135)
+let leafBY = (7)
+
+//p9
+//your parameter variables go here!
+let rect_width  = 200;
+let rect_height = 200;
+
+//Geometric background
+let geosize = (1); //size of geometric background
+let geo = false //turn on and off
+
+//Fox Motif
+let eyeWid = (15); //15 deff
+let noseW = (15); //15 deff
+let noseH = (5); //5 deff
+let noseX = (200);//basis for location X, 100
+let noseY = (225);//basis for location Y, 125
+let foxsize = (.5); //size of fox 1
+let foxy = false //turn off and on 
+
+//left fox 
+let eyeWidB = (15); //
+let noseWB = (15); //
+let noseHB = (5); //
+let noseXB = (0);//basis for location X, 100
+let noseYB = (225);//basis for location Y, 125
+let foxsizeB = (.5); //size of fox 1
+
+//right fox
+let eyeWidC = (15); //15 deff
+let noseWC = (15); //15 deff
+let noseHC = (5); //5 deff
+let noseXC = (400);//basis for location X, 100
+let noseYC = (225);//basis for location Y, 125
+let foxsizeC = (.5); //size of fox 1
+
+//Mushie A (Coloured In True)
+let mushsize = (.4); //size of mushie .34
+let mushX = (125) //x co-ord for mush orgin 125
+let mushY = (100) //x co-ord for mush orgin 100
+let mush = true //turn on and off
+let mushheav = 2
+
+//Mushie B
+let mushBsize = (.4); //size of mushie .34
+let mushBX = (125) //x co-ord for mush orgin 125
+let mushBY = (400) //x co-ord for mush orgin 100
+let mushB = false //turn on and off
+let mushBheav = 2
+
+//Leaf A (Coloured in)
+let leafAsize = (.9) //size of leaf .75
+let leafA = true //TRUE COLOURED
+let leafAX = (175)
+let leafAY = (140)
+
+//Leaf B (Line work only)
+let leafBsize = (.9)
+let leafB = true //TRUE LINE
+let leafBX = (135)
+let leafBY = (7)
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
