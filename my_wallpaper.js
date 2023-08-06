@@ -6,30 +6,30 @@ let rect_height = 200;
 let geosize = (1); //size of geometric background
 let geo = false //turn on and off
 
-//Fox Motif
+//Fox Motif, Center
 let eyeWid = (15); //15 deff
 let noseW = (15); //15 deff
 let noseH = (5); //5 deff
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
-let foxsize = (1); //size of fox 1
+let foxsize = (1); //size of fox 1, when in trio .35
 let foxysin = true //true, fox is singular, false theres three foxes
 
-//left fox 
+//Left fox 
 let eyeWidB = (15); // 15*
 let noseWB = (15); //15*
 let noseHB = (5); //5*
 let noseXB = (400);//basis for location X, 100
 let noseYB = (225);//basis for location Y, 125
-let foxsizeB = (.5); //size of fox .5
+let foxsizeB = (.5); //size of fox .5, when in trio .35
 
-//right fox
+//Right fox
 let eyeWidC = (15); //15*
 let noseWC = (15); //15*
 let noseHC = (5); //5*
 let noseXC = (0);//basis for location X, 100
 let noseYC = (225);//basis for location Y, 125
-let foxsizeC = (.5); //size of fox .5
+let foxsizeC = (.5); //size of fox .5, when in trio .35
 
 //Mushie A (Coloured In True)
 let mushsize = (.34); //size of mushie .34
@@ -40,8 +40,8 @@ let mushheav = 2
 
 //Mushie B
 let mushBsize = (.34); //size of mushie .34
-let mushBX = (125) //x co-ord for mush orgin 125
-let mushBY = (485) //x co-ord for mush orgin 100
+let mushBX = (125) //X at .34, 125 |
+let mushBY = (485) //Y at .34 485 |
 let mushB = false //turn on and off
 let mushBheav = 2
 
