@@ -329,7 +329,7 @@ let mushheav = 2 //2*
 //Mushie B
 let mushBsize = (.4); //Size of Mushroom when fox = (1), .34 | when fox is (.5), Mush is .4
 let mushBX = (125) //X Location when Mushroom B is = .34 and .4, 125 |
-let mushBY = (485) //Y Location when Mushroom B is = .34, 485 | Y Location when Mushroom B is = .4, 400
+let mushBY = (4005) //Y Location when Mushroom B is = .34, 485 | Y Location when Mushroom B is = .4, 400
 let mushB = false //TRUE, LINEWORK | FALSE, COLOURED
 let mushBheav = 2 //2*
 
