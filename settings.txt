@@ -17,7 +17,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (100);//basis for location X, 100
+let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1, when in trio .5
 let foxy = true //true, fox is singular| false, theres three foxes
@@ -88,7 +88,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (100);//basis for location X, 100
+let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1, when in trio .5
 let foxy = true //true, fox is singular| false, theres three foxes
@@ -157,7 +157,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (100);//basis for location X, 100
+let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1, when in trio .5
 let foxy = true //true, fox is singular| false, theres three foxes
@@ -228,7 +228,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (100);//basis for location X, 100
+let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1, when in trio .5
 let foxysin = false //true, fox is singular| false, theres three foxes
@@ -298,7 +298,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (200);//basis for location X, 100
+let noseX = (200);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (225);//basis for location Y, 125
 let foxsize = (.5); //size of fox 1, when in trio .5
 let foxy = false //true, fox is singular| false, theres three foxes
@@ -369,7 +369,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (100);//basis for location X, 100
+let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1, when in trio .35
 let foxysin = false //true, fox is singular| false, theres three foxes
@@ -440,7 +440,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (200);//basis for location X, 100
+let noseX = (200);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (225);//basis for location Y, 125
 let foxsize = (.5); //size of fox 1, when in trio .5
 let foxy = false //true, fox is singular| false, theres three foxes
@@ -489,7 +489,7 @@ let leafBY = (7) //always 7 for height
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -507,8 +507,8 @@ Wallpaper 8:
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (200);//basis for location X, 100
-let noseY = (225);//basis for location Y, 125
+let noseX = (200);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
+let noseY = (225);//Y location, when scale is 1 = 125 | Y location, when scale is .5 = 225
 let foxsize = (.5); //size of fox 1, when in trio .35
 let foxy = false //true, fox is singular| false, theres three foxes
 
@@ -516,47 +516,47 @@ let foxy = false //true, fox is singular| false, theres three foxes
 let eyeWidB = (15); //
 let noseWB = (15); //
 let noseHB = (5); //
-let noseXB = (0);//basis for location X, 100
-let noseYB = (225);//basis for location Y, 125
+let noseXB = (0);//X location, when scale is .5 = 0 or 400
+let noseYB = (225);//Y Location when scale is .5 = 225
 let foxsizeB = (.5); //size of fox 1
 
 //right fox
 let eyeWidC = (15); //15 deff
 let noseWC = (15); //15 deff
 let noseHC = (5); //5 deff
-let noseXC = (400);//basis for location X, 100
-let noseYC = (225);//basis for location Y, 125
+let noseXC = (400);//X location, when scale is .5 = 0 or 400
+let noseYC = (225);//Y Location when scale is .5 = 225
 let foxsizeC = (.5); //size of fox 1
 
 //Mushie A
 let mushsize = (.4); //size of mushie .34
-let mushX = (125) //x co-ord for mush orgin 125
-let mushY = (100) //x co-ord for mush orgin 100
+let mushX = (125) //X Location when Mushroom is = .4 and .34, 125 |
+let mushY = (100) //Y Location when Mushroom is = .4 and .34, 100 |
 let mush = false //turn on and off
 let mushheav = 2
 
 //Mushie B
 let mushBsize = (.4); //size of mushie .34
-let mushBX = (125) //x co-ord for mush orgin 125
-let mushBY = (400) //x co-ord for mush orgin 100
-let mushB = true //turn on and off
-let mushBheav = 2
+let mushBX = (125) //X Location when Mushroom B is = .34 and .4, 125 |
+let mushBY = (400) //Y Location when Mushroom B is = .34, 485 | Y Location when Mushroom B is = .4, 400
+let mushB = //True, Mushroom is Linework only | False, Mushroom is in colour
+let mushBheav = 2 //2*
 
 //Leaf A (Coloured in)
-let leafAsize = (.9) //size of leaf .75
-let leafA = false
-let leafAX = (175)
-let leafAY = (140)
+let leafAsize = (.9) //Size of leaf .75 when Fox is 1 | Size of leaf .9 when Fox is .35
+let leafA = false //TRUE COLOURED |FALSE LINE
+let leafAX = (175) //X Location when Leaf A is = .75, 245 | X Location when Leaf A is = .9, 175
+let leafAY = (140) //Y Location when Leaf A is = .75, 180 | X Location when Leaf A is = .9, 140
 
 //Leaf B (Line work only)
-let leafBsize = (.9)
-let leafB = true
-let leafBX = (135)
-let leafBY = (7)
+let leafBsize = (.9) //Size of leaf .75 when Fox is 1 | Size of leaf .9 when Fox is .35
+let leafB = //TRUE LINE |FALSE COLOURED
+let leafBX = (135) //X Location when Leaf B is = .75, 210 | X Location when Leaf B is = .9, 135
+let leafBY = (7) //7*
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
@@ -574,7 +574,7 @@ Wallpaper 9:
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GLIDE_WALLPAPER);
+  pWallpaper.output_mode(GRID_WALLPAPER);
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 

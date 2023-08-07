@@ -7,51 +7,51 @@ let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
 let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
-let noseY = (125);//basis for location Y, 125
+let noseY = (125);//Y location, when scale is 1 = 125 | Y location, when scale is .5 = 225
 let foxsize = (1); //size of fox 1, when in trio .5
-let foxysin = true //true, fox is singular| false, theres three foxes
+let foxysin = true //TRUE, SINGULAR | FALSE, THREE
 
 //Left fox 
 let eyeWidB = (15); // 15*
 let noseWB = (15); //15*
 let noseHB = (5); //5*
-let noseXB = (400);//basis for location X, 400
-let noseYB = (225);//basis for location Y, 225
+let noseXB = (400);//X location, when scale is .5 = 0 or 400
+let noseYB = (225);//Y Location when scale is .5 = 225
 let foxsizeB = (.5); //size of fox .5
 
 //Right fox
 let eyeWidC = (15); //15*
 let noseWC = (15); //15*
 let noseHC = (5); //5*
-let noseXC = (0);//basis for location X, 0
-let noseYC = (225);//basis for location Y, 225
+let noseXC = (0); //X location, when scale is .5 = 0 or 400
+let noseYC = (225); //Y Location when scale is .5 = 225
 let foxsizeC = (.5); //size of fox .5
 
 //Mushie A (Coloured In True)
 let mushsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
-let mushX = (125) //x co-ord for mush orgin 125
-let mushY = (100) //x co-ord for mush orgin 100
-let mush = true //true, Mushroom is Colour | False, Mushroom is Linework
+let mushX = (125) //X Location when Mushroom is = .4 and .34, 125 |
+let mushY = (100) //Y Location when Mushroom is = .4 and .34, 100 |
+let mush = true //TRUE COLOURED | FALSE, LINEWORK
 let mushheav = 2 //2*
 
 //Mushie B
 let mushBsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
-let mushBX = (125) //X at .34, 125 |
-let mushBY = (485) //Y at .34,  485 | Y at .4, 400
-let mushB = false //True, Mushroom is Linework only | False, Mushroom is in colour
+let mushBX = (125) //X Location when Mushroom B is = .34 and .4, 125 |
+let mushBY = (485) //Y Location when Mushroom B is = .34, 485 | Y Location when Mushroom B is = .4, 400
+let mushB = false //TRUE, LINEWORK | FALSE, COLOURED
 let mushBheav = 2 //2*
 
 //Leaf A (Coloured in)
 let leafAsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf .9 when Fox is .35
-let leafA = true //TRUE COLOURED |FALSE LINE
-let leafAX = (245) //245 at .75 | 175 at .9
-let leafAY = (180) //180 at .75 | 140 at .9
+let leafA = true //TRUE COLOURED |FALSE LINEWORK
+let leafAX = (245) //X Location when Leaf A is = .75, 245 | X Location when Leaf A is = .9, 175
+let leafAY = (180) //Y Location when Leaf A is = .75, 180 | X Location when Leaf A is = .9, 140
 
-//Leaf B (Line work only)
+//Leaf B
 let leafBsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf 1 when Fox is .35
 let leafB = false //TRUE LINE |FALSE COLOURED
 let leafBX = (210) //210 for at .75 | 135 at .9
-let leafBY = (7) //always 7 for height
+let leafBY = (7) //7*
 
 function setup_wallpaper(pWallpaper) {
  //pWallpaper.output_mode(DEVELOP_GLYPH);
