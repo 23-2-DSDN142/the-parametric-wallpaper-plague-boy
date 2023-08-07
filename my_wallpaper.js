@@ -6,7 +6,7 @@ let rect_height = 200;
 let eyeWid = (15); //15*
 let noseW = (15); //15*
 let noseH = (5); //5*
-let noseX = (100);//basis for location X, 100
+let noseX = (100);//X location, when scale is 1 = 100 | X location, when scale is .5 = 200
 let noseY = (125);//basis for location Y, 125
 let foxsize = (1); //size of fox 1, when in trio .5
 let foxysin = true //true, fox is singular| false, theres three foxes
@@ -37,20 +37,20 @@ let mushheav = 2 //2*
 //Mushie B
 let mushBsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
 let mushBX = (125) //X at .34, 125 |
-let mushBY = (485) //Y at .34,  485 |
+let mushBY = (485) //Y at .34,  485 | Y at .4, 400
 let mushB = false //True, Mushroom is Linework only | False, Mushroom is in colour
 let mushBheav = 2 //2*
 
 //Leaf A (Coloured in)
 let leafAsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf .9 when Fox is .35
 let leafA = true //TRUE COLOURED |FALSE LINE
-let leafAX = (245) //245 at .75
-let leafAY = (180) //180 at .75
+let leafAX = (245) //245 at .75 | 175 at .9
+let leafAY = (180) //180 at .75 | 140 at .9
 
 //Leaf B (Line work only)
 let leafBsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf 1 when Fox is .35
 let leafB = false //TRUE LINE |FALSE COLOURED
-let leafBX = (210) //210 for default at .75
+let leafBX = (210) //210 for at .75 | 135 at .9
 let leafBY = (7) //always 7 for height
 
 function setup_wallpaper(pWallpaper) {
