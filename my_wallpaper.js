@@ -28,14 +28,14 @@ let noseYC = (225); //Y Location when scale is .5 = 225
 let foxsizeC = (.5); //size of fox .5
 
 //Mushie A (Coloured In True)
-let mushsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
+let mushsize = (.34); //Size of Mushroom when fox = (1), .34 | when fox is (.5), Mush is .4
 let mushX = (125) //X Location when Mushroom is = .4 and .34, 125 |
 let mushY = (100) //Y Location when Mushroom is = .4 and .34, 100 |
 let mush = true //TRUE COLOURED | FALSE, LINEWORK
 let mushheav = 2 //2*
 
 //Mushie B
-let mushBsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
+let mushBsize = (.34); //Size of Mushroom when fox = (1), .34 | when fox is (.5), Mush is .4
 let mushBX = (125) //X Location when Mushroom B is = .34 and .4, 125 |
 let mushBY = (485) //Y Location when Mushroom B is = .34, 485 | Y Location when Mushroom B is = .4, 400
 let mushB = false //TRUE, LINEWORK | FALSE, COLOURED
@@ -47,10 +47,10 @@ let leafA = true //TRUE COLOURED |FALSE LINEWORK
 let leafAX = (245) //X Location when Leaf A is = .75, 245 | X Location when Leaf A is = .9, 175
 let leafAY = (180) //Y Location when Leaf A is = .75, 180 | X Location when Leaf A is = .9, 140
 
-//Leaf B
+//Leaf B (Line work only)
 let leafBsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf 1 when Fox is .35
 let leafB = false //TRUE LINE |FALSE COLOURED
-let leafBX = (210) //210 for at .75 | 135 at .9
+let leafBX = (210) //X Location when Leaf B is = .75, 210 | X Location when Leaf B is = .9, 135
 let leafBY = (7) //7*
 
 function setup_wallpaper(pWallpaper) {
