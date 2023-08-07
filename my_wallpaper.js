@@ -2,58 +2,54 @@
 let rect_width  = 200;
 let rect_height = 200;
 
-//Geometric background
-let geosize = (1); //size of geometric background
-let geo = false //turn on and off
-
 //Fox Motif, Center
-let eyeWid = (15); //15 deff
-let noseW = (15); //15 deff
-let noseH = (5); //5 deff
+let eyeWid = (15); //15*
+let noseW = (15); //15*
+let noseH = (5); //5*
 let noseX = (100);//basis for location X, 100
 let noseY = (125);//basis for location Y, 125
-let foxsize = (1); //size of fox 1, when in trio .35
-let foxysin = true //true, fox is singular, false theres three foxes
+let foxsize = (1); //size of fox 1, when in trio .5
+let foxysin = true //true, fox is singular| false, theres three foxes
 
 //Left fox 
 let eyeWidB = (15); // 15*
 let noseWB = (15); //15*
 let noseHB = (5); //5*
-let noseXB = (400);//basis for location X, 100
-let noseYB = (225);//basis for location Y, 125
-let foxsizeB = (.5); //size of fox .5, when in trio .35
+let noseXB = (400);//basis for location X, 400
+let noseYB = (225);//basis for location Y, 225
+let foxsizeB = (.5); //size of fox .5
 
 //Right fox
 let eyeWidC = (15); //15*
 let noseWC = (15); //15*
 let noseHC = (5); //5*
-let noseXC = (0);//basis for location X, 100
-let noseYC = (225);//basis for location Y, 125
-let foxsizeC = (.5); //size of fox .5, when in trio .35
+let noseXC = (0);//basis for location X, 0
+let noseYC = (225);//basis for location Y, 225
+let foxsizeC = (.5); //size of fox .5
 
 //Mushie A (Coloured In True)
-let mushsize = (.34); //size of mushie .34
+let mushsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
 let mushX = (125) //x co-ord for mush orgin 125
 let mushY = (100) //x co-ord for mush orgin 100
-let mush = true //turn on and off
-let mushheav = 2
+let mush = true //true, Mushroom is Colour | False, Mushroom is Linework
+let mushheav = 2 //2*
 
 //Mushie B
-let mushBsize = (.34); //size of mushie .34
+let mushBsize = (.34); //size of mushie when fox is (1) .34 | when fox is (.5), Mush is .4
 let mushBX = (125) //X at .34, 125 |
-let mushBY = (485) //Y at .34 485 |
-let mushB = false //turn on and off
-let mushBheav = 2
+let mushBY = (485) //Y at .34,  485 |
+let mushB = false //True, Mushroom is Linework only | False, Mushroom is in colour
+let mushBheav = 2 //2*
 
 //Leaf A (Coloured in)
-let leafAsize = (.75) //size of leaf .75
-let leafA = true //TRUE COLOURED
+let leafAsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf .9 when Fox is .35
+let leafA = true //TRUE COLOURED |FALSE LINE
 let leafAX = (245) //245 at .75
 let leafAY = (180) //180 at .75
 
 //Leaf B (Line work only)
-let leafBsize = (.75)
-let leafB = false //TRUE LINE
+let leafBsize = (.75) //Size of leaf .75 when Fox is 1 | Size of leaf 1 when Fox is .35
+let leafB = false //TRUE LINE |FALSE COLOURED
 let leafBX = (210) //210 for default at .75
 let leafBY = (7) //always 7 for height
 
